@@ -18,7 +18,7 @@ and Enterprise.
 **In Claude Code.**
 
 ```bash
-claude plugin marketplace add jagypus/hey-sania-plugin
+claude plugin marketplace add heysania/hey-sania-plugin
 claude plugin install hey-sania@hey-sania
 ```
 
