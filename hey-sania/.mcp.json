@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hey-sania": {
+      "type": "http",
+      "url": "https://asksania.vercel.app/api/mcp"
+    }
+  }
+}
