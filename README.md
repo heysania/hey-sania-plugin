@@ -47,9 +47,9 @@ organisations and documents rather than answering thinly from the nearest source
 | `hey-sania/skills/hey-sania/SKILL.md` | How to work the sources well |
 | `hey-sania/.mcp.json` | The connector — one HTTP server, OAuth at first use |
 
-The skill is generated from the one the app serves at
-[`/skill/SKILL.md`](https://heysania.ai/skill/SKILL.md), where a test holds it to
-the server's actual tools: it names every one and invents none. That is why this copy is
+The skill is generated from the one the app serves at `/skill/SKILL.md` — not linked,
+because that path is behind the sign-in — where a test holds it to the server's actual
+tools: it names every one and invents none. That is why this copy is
 published rather than hand-written: a skill that describes a tool the server no longer
 has is worse than no skill, and a copy taken by hand goes stale the day after it is
 taken. Refresh with `claude plugin marketplace update hey-sania`.
