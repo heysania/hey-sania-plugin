@@ -5,7 +5,7 @@ regeneration, bioregions, AI innovation — read by your own Claude, through the
 search the site uses.
 
 This repository is a Claude plugin marketplace holding one plugin. Installing it does
-two things at once: it connects Claude to [asksania.vercel.app](https://asksania.vercel.app),
+two things at once: it connects Claude to [heysania.ai](https://heysania.ai),
 and it teaches it how to read the sources — search across every set before narrowing,
 cite what it found, name what the sources do not cover, and never invent an organisation.
 
@@ -48,7 +48,7 @@ organisations and documents rather than answering thinly from the nearest source
 | `hey-sania/.mcp.json` | The connector — one HTTP server, OAuth at first use |
 
 The skill is generated from the one the app serves at
-[`/skill/SKILL.md`](https://asksania.vercel.app/skill/SKILL.md), where a test holds it to
+[`/skill/SKILL.md`](https://heysania.ai/skill/SKILL.md), where a test holds it to
 the server's actual tools: it names every one and invents none. That is why this copy is
 published rather than hand-written: a skill that describes a tool the server no longer
 has is worse than no skill, and a copy taken by hand goes stale the day after it is
@@ -56,5 +56,5 @@ taken. Refresh with `claude plugin marketplace update hey-sania`.
 
 ## Support
 
-[asksania.vercel.app/connect](https://asksania.vercel.app/connect) is where tokens are
+[heysania.ai/connect](https://heysania.ai/connect) is where tokens are
 made and revoked, and where a connection is taken back.

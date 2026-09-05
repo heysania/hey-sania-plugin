@@ -99,8 +99,8 @@ trial says they belong; dismiss the rest; a dismissed source can be found again.
 
 If this arrived as the Hey Sania plugin, the connection came with it: approve it the
 first time Claude asks, and there is nothing else to add. Installed on its own, the
-address is `https://asksania.vercel.app/api/mcp` — in claude.ai, add it as a custom
+address is `https://heysania.ai/api/mcp` — in claude.ai, add it as a custom
 connector; in Claude Code, `claude mcp add --transport http hey-sania
-https://asksania.vercel.app/api/mcp`. Either way you are sent to sign in and approve, and
+https://heysania.ai/api/mcp`. Either way you are sent to sign in and approve, and
 the token you are given is yours: it reads what you read, for an hour at a time, renewing
 itself until you take it back on the site's *Add to Claude* page.
