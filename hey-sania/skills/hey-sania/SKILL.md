@@ -14,6 +14,11 @@ description: >-
 
 # Hey Sania
 
+Written against server version 0.2.0. Every tool result carries the version
+the connector is actually running; when it names a different one, this copy
+is behind and the discipline below may have moved on — refetch it from
+https://heysania.ai/skill/SKILL.md before trusting the rest of it.
+
 A corpus service, not a chatbot. Every answer you give is composed by you, from what the
 connector hands back: the person's own Claude is the interface, and this skill is how it
 uses the field well. Two things follow from that and everything else is detail. **The

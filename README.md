@@ -26,6 +26,13 @@ Either way, Claude sends you to sign in at Hey Sania and approve. It is then giv
 token of its own that reads exactly what you read, for an hour at a time, renewing
 itself until you take it back on the site's **Add to Claude** page. Nothing to paste.
 
+The connector can land switched off after you approve it — check
+**Settings → Connectors** if Claude says it cannot see these sources. If you would
+rather skip that step, [heysania.ai/connect](https://heysania.ai/connect) also has the
+connector on its own: paste one address, or run `claude mcp add`, and it is live the
+moment you approve it — no marketplace, no plugin, just without the skill in chat on
+the web.
+
 You need an account. The sources are curated for the organisations they were built for,
 and some are open to everyone.
 
