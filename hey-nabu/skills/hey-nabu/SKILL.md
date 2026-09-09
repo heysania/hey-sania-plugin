@@ -112,7 +112,7 @@ and documents instead.
 ## If you administer the platform
 
 A platform administrator's token lists twelve more tools, and nobody else's does:
-`list_organisations`, `create_area`, `update_aperture`, `update_method`, `import_sources`,
+`list_organisations`, `create_area`, `update_aperture`, `update_definition`, `import_sources`,
 `proposed_sources`, `accept_source`, `dismiss_source`, `set_feed_status`, `list_clips`,
 `file_clip`, `discard_clip`. Three more let you go through what an expert holds and change it:
 `read_register`, `revise_record`, `review_records`. Two disciplines:
@@ -153,18 +153,19 @@ schema will not show at all until a missing field is filled, and you are told wh
 And a revision is read straight away if the record is already approved, so read it back
 before you write it.
 
-## When an expert carries a method
+## When an expert carries a definition
 
-Some experts come with a method: how that expert thinks about what it holds. `list_areas`
-returns it as `method` beside `looking_for`. It says which dials the expert reads a
-business on, where it stands on each and why, which frameworks it checks itself against,
-and what it can be asked to do — evaluate a pitch deck, help design a business.
+Some experts come with a definition: what that expert is, and what it stands for.
+`list_areas` returns it as `definition` beside `looking_for`. It says which dials the
+expert reads a business on, where it stands on each and why, which frameworks it checks
+itself against, and what it can be asked to do — evaluate a pitch deck, help design a
+business.
 
 When an expert has one, read it before you answer from that expert, and answer with it.
-Say where a thing sits on each dial the method names. Cite the record nearest to it. Give
-the price tag the method asks for. Where the method holds a view, say it is the expert's
-view; where it declines one, do not supply your own. The method points at records by name;
-the records are the evidence, and a claim the method makes that no record supports is the
+Say where a thing sits on each dial the definition names. Cite the record nearest to it.
+Give the price tag it asks for. Where the definition holds a view, say it is the expert's
+view; where it declines one, do not supply your own. The definition points at records by
+name; the records are the evidence, and a claim it makes that no record supports is the
 expert's opinion, and you say so.
 
 ## Connecting
