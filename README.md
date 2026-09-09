@@ -1,13 +1,16 @@
 # Hey Nabu
 
-Curated corpora on the field of impact — regenerative wealth, systems change, ocean
-regeneration, bioregions, AI innovation — read by your own Claude, through the same
-search the site uses.
+Ask Claude about the field of impact and get an answer you can check.
+
+Each expert has read one field — regenerative wealth, systems change, ocean
+regeneration, bioregions, AI innovation. It knows the organisations doing the work,
+who funds them, and what the research says. It keeps reading as new work appears.
+Every answer links back to where it came from.
 
 This repository is a Claude plugin marketplace holding one plugin. Installing it does
 two things at once: it connects Claude to [heynabu.ai](https://heynabu.ai),
-and it teaches it how to read the sources — search across every set before narrowing,
-cite what it found, name what the sources do not cover, and never invent an organisation.
+and it teaches it how to read the experts — search every one before narrowing, cite what
+it found, name what the sources do not cover, and never invent an organisation.
 
 ## Install
 
@@ -33,14 +36,16 @@ connector on its own: paste one address, or run `claude mcp add`, and it is live
 moment you approve it — no marketplace, no plugin, just without the skill in chat on
 the web.
 
-You need an account. The sources are curated for the organisations they were built for,
+You need an account. Each expert is built for the organisation it was commissioned by,
 and some are open to everyone.
 
 ## What it can do
 
-Ask it about the field and it searches every set of sources you can read, not the one
-you named. It reads a few hundred feeds a day across a handful of subjects, and every
-story carries a summary written for it and a link back to the publication.
+Ask it about the field and it searches every expert you can read, not the one you
+named. An expert knows the organisations working in its field, who funds them, and what
+the research says. It also reads what those organisations publish, so it can tell you
+what changed this week. Every story has a summary written for it and a link to the
+publication.
 
 It reads. It cannot publish, delete or edit anything, and the one thing it writes on
 your behalf — asking the editors to look into a gap — changes nothing anyone can read.
