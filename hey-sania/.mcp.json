@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "hey-sania": {
-      "type": "http",
-      "url": "https://heysania.ai/api/mcp"
-    }
-  }
-}

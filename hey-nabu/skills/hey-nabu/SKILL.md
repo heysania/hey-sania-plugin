@@ -1,10 +1,10 @@
 ---
-name: hey-sania
+name: hey-nabu
 description: >-
-  Work the Hey Sania connector well — curated corpora on the field of impact
+  Work the Hey Nabu connector well — curated corpora on the field of impact
   (regenerative wealth, systems change, ocean regeneration, bioregions, AI innovation, and
   whatever else has been built for the person you are helping), read through its MCP tools.
-  Use whenever the Hey Sania connector is attached and the question is about that
+  Use whenever the Hey Nabu connector is attached and the question is about that
   field: who is doing something, who is funding it, what has changed, what the evidence says,
   whether a pitch is new. Teaches the discipline the server expects — search wide before you
   narrow, expand what matters, cite the source, name what the sources do not cover, and ask
@@ -12,12 +12,12 @@ description: >-
   the same connector. Never invents an organisation.
 ---
 
-# Hey Sania
+# Hey Nabu
 
 Written against server version 0.2.0. Every tool result carries the version
 the connector is actually running; when it names a different one, this copy
 is behind and the discipline below may have moved on — refetch it from
-https://heysania.ai/skill/SKILL.md before trusting the rest of it.
+https://heynabu.ai/skill/SKILL.md before trusting the rest of it.
 
 A corpus service, not a chatbot. Every answer you give is composed by you, from what the
 connector hands back: the person's own Claude is the interface, and this skill is how it
@@ -168,10 +168,10 @@ expert's opinion, and you say so.
 
 ## Connecting
 
-If this arrived as the Hey Sania plugin, the connection came with it: approve it the
+If this arrived as the Hey Nabu plugin, the connection came with it: approve it the
 first time Claude asks, and there is nothing else to add. Installed on its own, the
-address is `https://heysania.ai/api/mcp` — in claude.ai, add it as a custom
-connector; in Claude Code, `claude mcp add --transport http hey-sania
-https://heysania.ai/api/mcp`. Either way you are sent to sign in and approve, and
+address is `https://heynabu.ai/api/mcp` — in claude.ai, add it as a custom
+connector; in Claude Code, `claude mcp add --transport http hey-nabu
+https://heynabu.ai/api/mcp`. Either way you are sent to sign in and approve, and
 the token you are given is yours: it reads what you read, for an hour at a time, renewing
 itself until you take it back on the site's *Add to Claude* page.
