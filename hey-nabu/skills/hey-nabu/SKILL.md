@@ -31,7 +31,11 @@ helping ask "who" first, and an answer that names no organisation has not read t
 1. **`list_areas`** first, always. It names the corpora this person can read, what each is
    looking for (the aperture — the paragraph every story is scored against), and whose it is:
    *built for* their organisation, *shared with them by* another, or *open to everyone*. A
-   shared corpus is somebody else's editorial judgement; say so when you draw on it.
+   shared corpus is somebody else's editorial judgement; say so when you draw on it. Where an
+   area names what it can be asked — `can_ask` — that is one line, not the whole lens: call
+   `read_definition` for that area once the question in front of you actually matches what
+   `can_ask` describes, and answer from it. Most questions never will, which is the point —
+   see "When an expert carries a definition" below.
 2. **`search_items`** with no `area_id`. A question rarely belongs to one corpus, and the
    search spans every one the person can read. Search wide, scan the summaries, then narrow
    — a second search with a sharper phrasing or one corpus — only once you know where the
@@ -111,16 +115,21 @@ and documents instead.
 
 ## If you administer the platform
 
-A platform administrator's token lists twelve more tools, and nobody else's does:
-`list_organisations`, `create_area`, `update_aperture`, `update_definition`, `import_sources`,
-`proposed_sources`, `accept_source`, `dismiss_source`, `set_feed_status`, `list_clips`,
-`file_clip`, `discard_clip`. Three more let you go through what an expert holds and change it:
-`read_register`, `revise_record`, `review_records`. Two disciplines:
+A platform administrator's token lists thirteen more tools, and nobody else's does:
+`list_organisations`, `create_area`, `update_aperture`, `update_definition`, `update_rubrics`,
+`import_sources`, `proposed_sources`, `accept_source`, `dismiss_source`, `set_feed_status`,
+`list_clips`, `file_clip`, `discard_clip`. Three more let you go through what an expert holds
+and change it: `read_register`, `revise_record`, `review_records`. Three disciplines:
 
 - **An aperture is written as what counts and what does not.** It is the paragraph every
   story is scored against. Draft it in conversation, read it back, and only then
   `update_aperture` — a change marks every recent score stale and the pipeline re-reads them,
   so the tool tells you how many. Unchanged text does nothing.
+- **A definition and its `rubrics` line are written together, and changed together.**
+  `update_definition` is the framework; `update_rubrics` is the one line `list_areas` actually
+  hands every reader, naming what the definition lets the expert be asked. Nothing checks the
+  two agree — write `rubrics` again whenever a definition's rubrics section changes, the same
+  discipline `update_aperture` already asks of a changed definition.
 - **A corpus arrives complete.** `create_area` takes the file that researched the field — a
   `corpus` header of title, aperture and feeds beside the `records` — and surveys every
   source at once; a new corpus is unreadable until it has been scored, and that takes up to
@@ -155,13 +164,19 @@ before you write it.
 
 ## When an expert carries a definition
 
-Some experts come with a definition: what that expert is, and what it stands for.
-`list_areas` returns it as `definition` beside `looking_for`. It says which dials the
-expert reads a business on, where it stands on each and why, which frameworks it checks
-itself against, and what it can be asked to do — evaluate a pitch deck, help design a
-business.
+Some experts come with a definition: what that expert is, and what it stands for. It says
+which dials the expert reads a business on, where it stands on each and why, which
+frameworks it checks itself against, and what it can be asked to do — evaluate a pitch deck,
+help design a business.
 
-When an expert has one, read it before you answer from that expert, and answer with it.
+`list_areas` does not hand you the whole thing. It hands you `can_ask`, one line beside
+`looking_for`, naming what the expert can be asked. The definition itself — the framework
+behind that line — waits behind `read_definition`, called with that area's id. Call it once
+a reader's question actually matches what `can_ask` describes; most questions to a corpus
+never do, and fetching the framework for all of them would cost every reader on every call
+for a payoff only some of them get.
+
+When you have called it, read it before you answer from that expert, and answer with it.
 Say where a thing sits on each dial the definition names. Cite the record nearest to it.
 Give the price tag it asks for. Where the definition holds a view, say it is the expert's
 view; where it declines one, do not supply your own. The definition points at records by
