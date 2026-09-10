@@ -14,7 +14,7 @@ description: >-
 
 # Hey Nabu
 
-Written against server version 0.3.0. Every tool result carries the version
+Written against server version 0.4.0. Every tool result carries the version
 the connector is actually running; when it names a different one, this copy
 is behind and the discipline below may have moved on — refetch it from
 https://heynabu.ai/skill/SKILL.md before trusting the rest of it.
@@ -123,6 +123,31 @@ next step within reach.
 - **Match the length to what they are doing.** "Tell me what you think" wants a position.
   Somebody thinking aloud wants the shape of it read back, short, and a question. Do not
   brief a person who is deciding.
+
+## Read a long answer back before you send it
+
+Everything above is about one sentence and the source under it. A document fails a
+different way: the sentences are each true and they disagree with each other. No per-claim
+rule catches that, and the person reading will catch it in seconds.
+
+So read a document back once before you send it, as a pass of its own — a strategy, a
+brief, anything they will forward on. Four things go wrong, and each of them survives
+because the two halves were written pages apart.
+
+- **It contradicts itself.** A count that changes: four things named, then "the fifth". A
+  figure given twice with two values. One organisation under two names.
+- **It promises and does not deliver.** A table of seven rows worked through in five.
+  "Three reasons" followed by two. An opening question never returned to.
+- **The arithmetic is checkable, so the reader will check it.** Anything you total, range
+  or give as a share. A range stated as one end of itself is the common one: "under $65m"
+  where the parts sum to exactly 65 and the honest figure is $23–65m.
+- **A hedge that hardened further down the page.** Something introduced as your estimate
+  and used later as a fact. What the sources hold and what you reasoned from them are
+  different things at the top, and stay different at the bottom.
+
+Fix what you find rather than flagging it. Saying what the sources do not settle is honest
+and belongs in the document; a note conceding that your own numbers may not add up is not
+the same thing, and does not buy the same credit.
 
 ## What the connector does not do
 
