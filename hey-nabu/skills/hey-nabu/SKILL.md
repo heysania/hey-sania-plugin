@@ -160,16 +160,20 @@ and documents instead.
 
 ## If you administer the platform
 
-A platform administrator's token lists thirteen more tools, and nobody else's does:
-`list_organisations`, `create_area`, `update_aperture`, `update_definition`, `update_rubrics`,
-`import_sources`, `proposed_sources`, `accept_source`, `dismiss_source`, `set_feed_status`,
-`list_clips`, `file_clip`, `discard_clip`. Three more let you go through what an expert holds
+A platform administrator's token lists fourteen more tools, and nobody else's does:
+`list_organisations`, `create_area`, `rename_area`, `update_aperture`, `update_definition`,
+`update_rubrics`, `import_sources`, `proposed_sources`, `accept_source`, `dismiss_source`,
+`set_feed_status`, `list_clips`, `file_clip`, `discard_clip`. Three more let you go through what an expert holds
 and change it: `read_register`, `revise_record`, `review_records`. Three disciplines:
 
 - **An aperture is written as what counts and what does not.** It is the paragraph every
   story is scored against. Draft it in conversation, read it back, and only then
   `update_aperture` — a change marks every recent score stale and the pipeline re-reads them,
   so the tool tells you how many. Unchanged text does nothing.
+- **A name can be changed and costs nothing.** Every route and every record joins on a
+  corpus's id, so `rename_area` moves no link and breaks no reference. Names are unique per
+  account, and retiring one does not release its name — retired is kept, not deleted, which
+  is the wall you meet promoting a second version into the first one's name.
 - **A definition and its `rubrics` line are written together, and changed together.**
   `update_definition` is the framework; `update_rubrics` is the one line `list_areas` actually
   hands every reader, naming what the definition lets the expert be asked. Nothing checks the
